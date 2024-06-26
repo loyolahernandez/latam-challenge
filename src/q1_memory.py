@@ -2,7 +2,9 @@ import json
 from typing import List, Tuple
 from datetime import datetime
 from collections import defaultdict
+from memory_profiler import profile
 
+@profile
 def q1_memory(file_path: str) -> List[Tuple[datetime.date, str]]:
     # Leer y procesar cada línea del archivo JSON por separado para minimizar el uso de memoria
     date_user_count = defaultdict(lambda: defaultdict(int))
