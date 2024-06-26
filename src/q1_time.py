@@ -5,7 +5,7 @@ from datetime import datetime
 from collections import defaultdict, Counter
 from memory_profiler import profile
 
-@profile
+
 def q1_time(file_path: str) -> List[Tuple[datetime.date, str]]:
     # leer los datos del archivo JSON
     tweets_data = []
