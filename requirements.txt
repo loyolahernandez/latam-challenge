@@ -1,1 +1,2 @@
 memory-profiler==0.61.0
+emoji==2.12.1
